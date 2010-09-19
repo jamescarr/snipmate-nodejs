@@ -1,10 +1,10 @@
-var socket = ${1:io}.listen(${2:app});
+var ${1:socket} = ${2:io}.listen(${3:app});
 
-socket.on('connection', function(client){
-  client.on('message', function(${3:msg}){
-    ${4:}
+$1.on('connection', function(client){
+  client.on('message', function(${4:msg}){
+    ${5:}
   });
   client.on('disconnect', function(){
-    ${5:}
+    ${6:}
   });
 });
